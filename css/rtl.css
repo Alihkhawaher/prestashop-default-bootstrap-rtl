@@ -46,8 +46,8 @@ class*=["pull"] {
 right: auto;
 } 
 
-.text-right, #cart_summary tbody td.cart_unit, #cart_summary tbody td.cart_total {
-  text-align: left; }
+/* .text-right, #cart_summary tbody td.cart_unit, #cart_summary tbody td.cart_total {
+  text-align: left; } */
 
 
 @media (min-width: 768px) {
@@ -1493,13 +1493,13 @@ ul.product_list.grid > li .product-container .button-container .ajax_add_to_cart
 
 .price-percent-reduction {
   padding: 0 3px 0 5px;
-  direction: ltr;
+ /* direction: ltr; */
  }
 
 
 #reduction_percent,
 #reduction_amount {
-  direction: ltr;
+ /* direction: ltr; */
   margin-right: 0px;
   margin-left: 10px; }
 
@@ -2730,3 +2730,67 @@ table#product_comparison .remove {
   float: left; }
 
 /*# sourceMappingURL=rtl.css.map */
+
+
+/********************************************************************
+					Prestashop 1.6.1
+********************************************************************/
+
+
+
+#order-opc .page-heading.step-num {
+    padding-right: 45px;
+    overflow: visible;
+}
+
+#order-opc .page-heading.step-num span {
+    right: 10px;
+    overflow: visible;
+}
+#homepage-slider .bx-wrapper img {
+    float: right;
+}
+
+#homepage-slider .bx-wrapper .bx-next {
+    right: 60px;
+    left: auto;
+}
+
+#homepage-slider .bx-wrapper .bx-prev {
+    right: 10px;
+    left: auto;
+}
+
+#cart_summary > tfoot > tr:nth-child(5) > td.total_price_container.text-right {
+direction:ltr
+}
+
+#cart_summary > thead > tr > th.cart_total.item.text-right {
+direction:ltr;
+}
+
+div.radio span.checked {
+    background-position: -465px -243px;
+}
+
+
+/* over-riding line 1438 */
+   ul.product_list.grid > li .product-container .price,
+    ul.product_list.grid > li .product-container .price-percent-reduction ,
+		  #old_price, .price.product-price , #layer_cart_product_price{
+direction:rtl;}
+
+
+/* change the following in 'themes\default-bootstrap\css\autoload\responsive-tables.css'
+
+table td, table th { padding: 9px 10px; text-align: left; }
+to 
+table td, table th { padding: 9px 10px; text-align: start; }
+
+in this file comment lines
+49
+50 
+1496
+1502
+
+ */
