@@ -2733,10 +2733,21 @@ table#product_comparison .remove {
 
 
 /********************************************************************
-					Prestashop 1.6.1
+					New Styles
 ********************************************************************/
 
+/* #criterions_list label {
+  float: right !important;
+}
 
+
+#new_comment_form {
+  text-align: right !important;
+}
+ */
+/********************************************************************
+					Prestashop 1.6.1
+********************************************************************/
 
 #order-opc .page-heading.step-num {
     padding-right: 45px;
@@ -2750,7 +2761,7 @@ table#product_comparison .remove {
 #homepage-slider .bx-wrapper img {
     float: right;
 }
-
+/* 
 #homepage-slider .bx-wrapper .bx-next {
     right: 60px;
     left: auto;
@@ -2760,14 +2771,17 @@ table#product_comparison .remove {
     right: 10px;
     left: auto;
 }
+ */
+/* 
 
+the translation had the problem of colon in reverse and the issue is not from CSS
 #cart_summary > tfoot > tr:nth-child(5) > td.total_price_container.text-right {
 direction:ltr
 }
 
 #cart_summary > thead > tr > th.cart_total.item.text-right {
 direction:ltr;
-}
+} */
 
 div.radio span.checked {
     background-position: -465px -243px;
@@ -2778,7 +2792,15 @@ div.radio span.checked {
    ul.product_list.grid > li .product-container .price,
     ul.product_list.grid > li .product-container .price-percent-reduction ,
 		  #old_price, .price.product-price , #layer_cart_product_price{
-direction:rtl;}
+direction:rtl;}	
+
+p.payment_module a {
+    letter-spacing: 0px;
+}
+
+#HOOK_PAYMENT  p > a {
+background-position:98% !important;
+}
 
 
 /* change the following in 'themes\default-bootstrap\css\autoload\responsive-tables.css'
@@ -2792,5 +2814,4 @@ in this file comment lines
 50 
 1496
 1502
-
  */
